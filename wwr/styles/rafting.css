@@ -1,0 +1,223 @@
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #75ABBC;
+  --accent1-color: #000000;
+  --accent2-color: #23B5D3;
+  --heading-font: "Roboto", sans-serif;
+  --body-font: "sans", sans-serif;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+}
+
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+
+.hero article img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50px;
+
+}
+
+
+.socialmedia a img {
+  width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #75ABBC;
+  --accent1-color: #A2AEBB;
+  --accent2-color: #23B5D3;
+  --heading-font: "Roboto", sans-serif;
+  --body-font: "sans", sans-serif;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
+.logo {
+  margin-left: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+header, main, footer {
+  width: 840;
+  margin: 0;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+  
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+article {
+  position: absolute;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+} */
