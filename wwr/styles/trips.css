@@ -19,20 +19,16 @@ body {
   background-color: #f5f9fa;
 }
 
-/* Header */
 header {
   background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 12px 24px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid var(--accent2-color);
-  padding: 12px 24px;
-}
-
-.header-container {
   max-width: 840px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
@@ -42,6 +38,7 @@ header {
 
 nav {
   display: flex;
+  justify-content: flex-end;
   gap: 24px;
   font-family: var(--heading-font);
 }
@@ -57,89 +54,63 @@ nav a:hover {
   color: var(--accent2-color);
 }
 
-/* Main content */
 main {
   max-width: 840px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 16px;
 }
 
-.contact-info h1,
-.contact-form h2,
-.team h2 {
-  font-family: var(--heading-font);
-  color: var(--accent2-color);
-}
-
-.company-details p {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-}
-
-.map-container {
-  margin-top: 1rem;
-  border: 2px solid var(--secondary-color);
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.contact-form form {
-  display: grid;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 0.6rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-family: var(--body-font);
-}
-
-button[type="submit"] {
-  background-color: var(--accent2-color);
-  color: var(--primary-color);
-  padding: 0.75rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  font-family: var(--heading-font);
-}
-
-button[type="submit"]:hover {
-  background-color: var(--secondary-color);
-}
-
-.team {
-  margin-top: 3rem;
-}
-
-.team-grid {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.team-grid figure {
+.trips-intro {
   text-align: center;
-  flex: 1 1 30%;
+  margin-bottom: 2rem;
 }
 
-.team-grid img {
+.trip-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-bottom: 2rem;
+}
+
+.trip-cards article {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.trip-cards img {
   width: 100%;
-  max-width: 200px;
-  border-radius: 10px;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 12px;
 }
 
-/* Footer */
+.trip-summary {
+  margin-top: 2rem;
+}
+
+.trip-summary table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.trip-summary caption {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.trip-summary th,
+.trip-summary td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
 footer {
   max-width: 840px;
   margin: 0 auto;
