@@ -73,18 +73,14 @@ nav, p, section, article {
   padding: 8px;
 }
 
-.socialmedia a {
-  text-decoration: none;
-}
-
-.hero {
-  position: relative;
-}
-
 .hero img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.hero {
+  position: relative;
 }
 
 
@@ -121,6 +117,13 @@ h1 {
   border-radius: 50px;
 
 }
+
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+
 
 
 .socialmedia a img {

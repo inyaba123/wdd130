@@ -1,0 +1,118 @@
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #75ABBC;
+  --accent1-color: #000000;
+  --accent2-color: #23B5D3;
+  --heading-font: "Roboto", sans-serif;
+  --body-font: "sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+}
+
+header {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+header .logo {
+  height: 50px;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+
+.contact-info h1,
+.contact-form h2,
+.team h2 {
+  font-family: var(--heading-font);
+  color: var(--accent2-color);
+}
+
+.company-details p {
+  margin: 0.5rem 0;
+}
+
+.map-container {
+  margin-top: 1rem;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+}
+
+input,
+select,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
+
+.team-grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.team-grid figure {
+  text-align: center;
+  flex: 1;
+}
+
+.team-grid img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.socialmedia a img {
+  height: 30px;
+  margin: 0 5px;
+}
